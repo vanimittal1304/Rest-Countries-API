@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Nunito, sans-serif;
+    max-width: 100%;
+
+}
+header{
+    box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.2);
+
+}
+.headerContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding: 10px 24px;
+}
+.title{
+    font-weight: 800;
+}
+
+main{
+    padding: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.countriesContainer{
+    max-width: 1280px;
+    margin-inline: auto;
+    display: flex;
+    gap: 64px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.country{
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0px 4px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 16px;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+}
+.country:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0px 7px 3px rgba(0, 0, 0, 0.1);
+
+}
+.country img{
+    width: 100%;
+}
+.cardTitle{
+    font-size: 20px;
+    padding: 10px 0;
+}
+.cardText{
+    padding-inline: 20px;
+    padding-bottom: 16px;
+}
+
+.backButton{
+    margin-inline: 8.5rem;
+    margin-block: 3rem;
+}
+.backButton, .boundaryCountries button{
+        padding-inline: 10px;
+        padding-block: 5px;
+        border-radius: 5px;
+        background-color: white;
+        border: none;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+        /* margin: 60px 0 0 60px ; */
+        
+}
+.boundaryCountries button{
+    margin-right: 0.5rem;
+    color: rgb(110, 110, 110);
+}
+.countrySection{
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    align-items: center;
+    max-width: 80%;
+    margin-inline: auto;
+}
+.flag{
+    width: 500px;
+}
+.flag img{
+    width: 100%;
+}
+
+.countrySection2 h1{
+    padding-block: 20px;
+}
+.countryInfo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    column-gap: 64px;
+    max-height: 180px;
+    flex-wrap: wrap;
+
+}
+.countryInfo p{
+    margin: 0;
+}
+
+.boundaryCountries h3{
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+@media(max-width:768px){
+    .title{
+        font-weight: 400;
+    }
+    .backButton{
+        margin-inline: 5rem;
+    }
+    .countrySection{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+    .countryInfo{
+        /* display: block; */
+        max-height: unset;
+    }
+    .flag{
+        max-width: 90%;
+    }
+}
