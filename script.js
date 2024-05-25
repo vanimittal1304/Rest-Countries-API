@@ -1,7 +1,7 @@
 const countriesContainer = document.querySelector(".countriesContainer")
 
 
-fetch('https://restcountries.com/v3.1/all ')
+fetch('./countries.json')
 .then((res) => res.json())
 .then((data) => {
     // console.log(data)
@@ -30,5 +30,3 @@ fetch('https://restcountries.com/v3.1/all ')
 
     });
 })
-
-
