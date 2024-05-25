@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+#drk-mod{
+    cursor: pointer;
+}
+
 body{
     font-family: Nunito, sans-serif;
     max-width: 100%;
